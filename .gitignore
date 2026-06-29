@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Datasets (provide your own — see README)
+data/*.npz
+data/wireframe_raw/
+data/wireframe_raw
+
+# Generated outputs (curated copies live in assets/)
+/examples.png
+/kitchen_*.png
+
+# Checkpoints from resolution/capacity sweeps
+# (the deployed model, fclip_256_best.pt, IS tracked)
+/fclip_384_best.pt
+/fclip_512_best.pt
+
+# Misc
+*.log
