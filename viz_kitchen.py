@@ -4,7 +4,7 @@
 import os, sys, numpy as np, cv2, torch, torch.nn as nn, torch.nn.functional as F
 
 DEV = 'mps' if torch.backends.mps.is_available() else ('cuda' if torch.cuda.is_available() else 'cpu')
-NPZ = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else os.path.expanduser('~/Desktop/Projects/LSD-TML/implementation/wireframe_lines_256_5000.npz')
+NPZ = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] else 'data/wireframe_lines_256_5000.npz'
 IN  = int(sys.argv[2]) if len(sys.argv) > 2 else 256
 WIDTH = int(sys.argv[3]) if len(sys.argv) > 3 else 4
 CKPT = sys.argv[4] if len(sys.argv) > 4 else 'fclip_%d_best.pt' % IN

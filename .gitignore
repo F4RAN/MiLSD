@@ -23,3 +23,7 @@ data/wireframe_raw
 
 # Misc
 *.log
+
+# intermediate export files
+*_fp32.onnx
+*_pre.onnx

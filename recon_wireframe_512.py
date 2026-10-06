@@ -1,9 +1,9 @@
 # recon_wireframe_512.py — download the native-512 wireframe source (L-CNN / LINEA 'wireframe_processed')
 # and PRINT its exact format, so the 512 npz converter can be finalized without guessing.
-# Run:  python ~/Desktop/Projects/LSD-TML/local_m1/recon_wireframe_512.py [dest_dir]
+# Run:  python recon_wireframe_512.py [dest_dir]
 import os, sys, glob, json, zipfile, urllib.request, subprocess
 
-DEST = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser('~/Desktop/Projects/LSD-TML/wireframe_src')
+DEST = sys.argv[1] if len(sys.argv) > 1 else 'data/wireframe_src'
 os.makedirs(DEST, exist_ok=True)
 URL = 'https://github.com/SebastianJanampa/storage/releases/download/v1.0.0/wireframe_processed.zip'
 ZP  = os.path.join(DEST, 'wireframe_processed.zip')

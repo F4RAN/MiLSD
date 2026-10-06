@@ -1,8 +1,8 @@
 # train_fclip_512.py — F-Clip (center+length+angle) at HIGH RESOLUTION on M1, with sAP eval built in.
 # Tests your "resolution is the dominant lever" thesis on your best model, at a size only F-Clip can fit.
 # Usage:  python train_fclip_512.py [npz_path] [IN_SIZE]      (defaults: 5000-img npz, 512)
-#   e.g.  python ~/Desktop/Projects/LSD-TML/local_m1/train_fclip_512.py            # 512
-#         python ~/Desktop/Projects/LSD-TML/local_m1/train_fclip_512.py "" 384     # 384
+#   e.g.  python train_fclip_512.py            # 512
+#         python train_fclip_512.py "" 384     # 384
 import os, sys, numpy as np, cv2, random, torch, torch.nn as nn, torch.nn.functional as F
 
 SEED = 0; random.seed(SEED); np.random.seed(SEED); torch.manual_seed(SEED)

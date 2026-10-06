@@ -2,11 +2,11 @@
 # on YOUR val set, at several input sizes, with its OWN 4-channel inference path. This tells us the true
 # resolution ceiling and validates our eval harness — separating "my estimate was wrong" from "training is wrong".
 #
-# Run:  python ~/Desktop/Projects/LSD-TML/local_m1/eval_pretrained_ref.py
+# Run:  python eval_pretrained_ref.py
 import os, sys, json, numpy as np, cv2, torch
 import torch.nn.functional as F
 
-REPO = os.path.expanduser('~/Desktop/Projects/LSD-TML/mlsd_pytorch')
+REPO = os.environ.get('MLSD_REPO', 'mlsd_pytorch')
 os.chdir(REPO); sys.path.insert(0, REPO)
 from models.mbv2_mlsd_tiny import MobileV2_MLSD_Tiny   # 4-ch inference model that matches the shipped checkpoint
 
