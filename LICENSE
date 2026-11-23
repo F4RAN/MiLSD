@@ -1,16 +1,37 @@
-MIT License
+MiLSD License (MIT License with Citation Requirement)
 
 Copyright (c) 2026 Parsa Hassani Shariat Panahi, Amir Hossein Jalilvand, M. Hassan Najafi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of this software, trained models, and associated documentation files (the
+"Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+2. Citation requirement. Any work that uses the Software, in whole or in part,
+   or that uses models, weights, or results produced with it, must cite the
+   following paper. This includes academic papers, theses, technical reports,
+   preprints, software, and commercial products (for products, the citation
+   must appear in the documentation or in an "about" / credits section):
+
+   P. Hassani Shariat Panahi, A. H. Jalilvand, and M. H. Najafi,
+   "MiLSD: A Micro Line-Segment Detector for Resource-Constrained Devices,"
+   IEEE Internet of Things Journal, 2026, doi: 10.1109/JIOT.2026.3750037.
+
+   BibTeX:
+
+   @article{panahi2026milsd,
+     author  = {Hassani Shariat Panahi, Parsa and Jalilvand, Amir Hossein and Najafi, M. Hassan},
+     title   = {{MiLSD}: A Micro Line-Segment Detector for Resource-Constrained Devices},
+     journal = {IEEE Internet of Things Journal},
+     year    = {2026},
+     doi     = {10.1109/JIOT.2026.3750037},
+     note    = {Early Access}
+   }
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
