@@ -7,13 +7,28 @@
   <img alt="arena"   src="https://img.shields.io/badge/int8%20arena-~1MB-378ADD">
   <img alt="sap"     src="https://img.shields.io/badge/sAP10-24.1-7F77DD">
   <img alt="target"  src="https://img.shields.io/badge/target-STM32H7%20(no%20NPU)-EF9F27">
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-555555">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT%20%2B%20citation-555555">
+  <a href="https://doi.org/10.1109/JIOT.2026.3750037"><img alt="paper" src="https://img.shields.io/badge/paper-IEEE%20IoT%20Journal-00629B"></a>
+  <a href="https://arxiv.org/abs/2607.06600"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2607.06600-B31B1B"></a>
 </p>
 
 MiLSD keeps whole, scored line segments — not a dense edge map — and is evaluated with the field-standard structural Average Precision (sAP) used by L-CNN and HAWP. It builds on the single-stage, junction-free **F-Clip** representation (each grid cell predicts a line's *center*, *length*, and *angle*), shrinks the network to a microcontroller budget, and recovers most of the accuracy lost to that shrinkage with three **inference-time** stages: sub-pixel decoding, test-time augmentation, and a lightweight **Line-of-Interest (LoI) verification head**.
 
 <p align="center"><img src="assets/examples.png" width="92%"><br>
 <em>Held-out Wireframe-val scenes — left: ground truth (green), right: MiLSD (yellow, LoI-verified).</em></p>
+
+## Paper
+
+This code goes with our paper in the **IEEE Internet of Things Journal**:
+
+> **MiLSD: A Micro Line-Segment Detector for Resource-Constrained Devices**<br>
+> Parsa Hassani Shariat Panahi, Amir Hossein Jalilvand, M. Hassan Najafi<br>
+> *IEEE Internet of Things Journal*, 2026 (Early Access).
+
+- IEEE Xplore: https://doi.org/10.1109/JIOT.2026.3750037
+- arXiv preprint: https://arxiv.org/abs/2607.06600
+
+**If you use this code, the models, or the results, you must cite the paper** (see [Citation](#citation) and [License](#license)).
 
 ## Results
 
@@ -148,13 +163,25 @@ The deployed pipeline is int8: PyTorch → ONNX → int8 QDQ (`export_int8.py`, 
 
 ## Citation
 
+If you use MiLSD in any way (code, trained models, ONNX files, or results), please cite our paper. You can also use the **"Cite this repository"** button on the right side of the GitHub page.
+
+**BibTeX**
+
 ```bibtex
-@misc{milsd2026code,
-  author       = {Hassani Shariat Panahi, Parsa and Jalilvand, Amir Hossein and Najafi, M. Hassan},
-  title        = {{MiLSD}: Micro Line-Segment Detector},
-  year         = {2026},
-  howpublished = {\url{https://github.com/<your-github-username>/MiLSD}}
+@article{panahi2026milsd,
+  author  = {Hassani Shariat Panahi, Parsa and Jalilvand, Amir Hossein and Najafi, M. Hassan},
+  title   = {{MiLSD}: A Micro Line-Segment Detector for Resource-Constrained Devices},
+  journal = {IEEE Internet of Things Journal},
+  year    = {2026},
+  doi     = {10.1109/JIOT.2026.3750037},
+  note    = {Early Access}
 }
+```
+
+**APA**
+
+```text
+Hassani Shariat Panahi, P., Jalilvand, A. H., & Najafi, M. H. (2026). MiLSD: A micro line-segment detector for resource-constrained devices. IEEE Internet of Things Journal. Advance online publication. https://doi.org/10.1109/JIOT.2026.3750037
 ```
 
 ## Acknowledgments
@@ -163,4 +190,4 @@ MiLSD builds on the **F-Clip** center/length/angle representation, the **L-CNN**
 
 ## License
 
-Released under the [MIT License](LICENSE).
+Released under the [MiLSD License](LICENSE): an MIT-style license with one extra rule. You may use, change, and share this code freely, **but any work that uses it (papers, theses, reports, software, or products) must cite the MiLSD paper** shown in [Citation](#citation).

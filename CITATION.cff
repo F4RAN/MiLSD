@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, you must cite the paper below (see LICENSE)."
+title: "MiLSD: Micro Line-Segment Detector"
+authors:
+  - family-names: "Hassani Shariat Panahi"
+    given-names: "Parsa"
+  - family-names: "Jalilvand"
+    given-names: "Amir Hossein"
+  - family-names: "Najafi"
+    given-names: "M. Hassan"
+repository-code: "https://github.com/F4RAN/MiLSD"
+license-url: "https://github.com/F4RAN/MiLSD/blob/main/LICENSE"
+preferred-citation:
+  type: article
+  title: "MiLSD: A Micro Line-Segment Detector for Resource-Constrained Devices"
+  authors:
+    - family-names: "Hassani Shariat Panahi"
+      given-names: "Parsa"
+    - family-names: "Jalilvand"
+      given-names: "Amir Hossein"
+    - family-names: "Najafi"
+      given-names: "M. Hassan"
+  journal: "IEEE Internet of Things Journal"
+  year: 2026
+  doi: "10.1109/JIOT.2026.3750037"
+  url: "https://doi.org/10.1109/JIOT.2026.3750037"
+  notes: "Early Access. arXiv preprint: https://arxiv.org/abs/2607.06600"
